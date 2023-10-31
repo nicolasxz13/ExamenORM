@@ -1,0 +1,56 @@
+@model UserHabits
+@{
+    int? userid = Context.Session.GetInt32("UserId");
+}
+
+<div>
+    <h2>
+        @Model.creatorName Habits are...
+    </h2>
+    @foreach (Habit otherhabit in @Model.Habits)
+    {
+        <div class="otherhabits">
+            <p class="othertitle">
+                @otherhabit.Title @otherhabit.Category.Name
+                @if ((DateTime.Now - otherhabit.UpdatedAt).TotalHours <= 24)
+                {
+                    <span class="update">Updated!</span>
+                }
+            </p>
+            <p>
+                @otherhabit.Description
+            </p>
+            <p>
+                @{
+                    string result = "";
+                    int i = otherhabit.Likes.Count();
+                    if (i == 0)
+                    {
+                        result = "Give them their first cheer!";
+                    }
+                    else if (i == 1)
+                    {
+                        result = "1 person is cheering them on!";
+                    }
+                    else
+                    {
+                        result = $"{otherhabit.Likes.First().Creator.Name} and {i} others are cheering them on!";
+                    }
+                }
+                @result
+            </p>
+            <div class="likebutton">
+                @if (otherhabit.Likes.Any(a => a.CreatorId == userid))
+                {
+                    <p>Thanks for the cheer!</p>
+                }
+                else
+                {
+                    <form asp-action="Create" asp-controller="Like" asp-route-habitid="@otherhabit.Id">
+                        <button type="submit" class="buttonpoint">Cheer On!</button>
+                    </form>
+                }
+            </div>
+        </div>
+    }
+</div>

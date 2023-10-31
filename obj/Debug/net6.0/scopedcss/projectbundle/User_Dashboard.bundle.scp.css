@@ -1,0 +1,346 @@
+/* _content/User_Dashboard/Views/Home/Index.cshtml.rz.scp.css */
+.title[b-lmexgh0x1y] {
+    background-color: #DDDDDD;
+    color: #040404;
+    padding: 2em;
+    margin-top: 1em;
+    border: solid #CCCCCC 0.5em;
+}
+
+.title>*[b-lmexgh0x1y] {
+    margin-top: 0.5em;
+}
+
+h2[b-lmexgh0x1y] {
+    font-weight: 900;
+}
+
+.blocks[b-lmexgh0x1y] {
+    margin-top: 1em;
+    display: flex;
+}
+
+.block :first-child[b-lmexgh0x1y] {
+    font-weight: 900;
+}
+
+.btn1[b-lmexgh0x1y] {
+    color: white;
+    font-size: 1.5;
+    font-weight: 900;
+    height: 3.5em;
+    width: 9em;
+    border: 4px solid black;
+    box-shadow: 5px 5px black;
+    background-color: #2b78e4;
+}
+
+.btn1:active[b-lmexgh0x1y] {
+    /* X, Y, blur, color*/
+    box-shadow: 2px 2px 2px black;
+    transform: translateZ(5px);
+    align-items: center;
+}
+/* _content/User_Dashboard/Views/Login/Register.cshtml.rz.scp.css */
+h2[b-kmabpilgpm] {
+    font-weight: 500;
+}
+
+.block[b-kmabpilgpm] {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    margin-top: 0.5em;
+}
+
+.userform form :last-child[b-kmabpilgpm] {
+    margin-top: 1em;
+    margin-left: auto;
+    background-color: #009E0F;
+    color: white;
+}
+
+.userform :last-child[b-kmabpilgpm] {
+    margin-top: 1em;
+}
+/* _content/User_Dashboard/Views/Login/Signin.cshtml.rz.scp.css */
+h2[b-6d4vrt0yf2] {
+    font-weight: 500;
+}
+
+.block[b-6d4vrt0yf2] {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+}
+
+.userform form :last-child[b-6d4vrt0yf2] {
+    margin-top: 1em;
+    margin-left: auto;
+    background-color: #009E0F;
+    color: white;
+}
+
+.userform :last-child[b-6d4vrt0yf2] {
+    margin-top: 1em;
+}
+/* _content/User_Dashboard/Views/UserDashboard/Dashboardadmin.cshtml.rz.scp.css */
+.title[b-vf6tu3tgvf] {
+    display: flex;
+    justify-content: space-between;
+}
+
+table[b-vf6tu3tgvf] {
+    margin-top: 2em;
+    width: 100%;
+}
+
+tr:nth-child(even)[b-vf6tu3tgvf] {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover[b-vf6tu3tgvf] {
+    background-color: #ddd;
+}
+
+table tbody tr td[b-vf6tu3tgvf] {
+    padding: 9px;
+    text-align: left;
+}
+
+table thead tr th[b-vf6tu3tgvf] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #cccccc;
+    color: black;
+    padding: 9px;
+}
+
+button[b-vf6tu3tgvf] {
+    background-color: #2B78E5;
+    color: white;
+}
+.deletebutton[b-vf6tu3tgvf] {
+    background: none;
+    border: none;
+    color: #0d6efd;
+    text-decoration: underline;
+}
+.actions[b-vf6tu3tgvf]{
+    display:flex;
+    flex-direction:row;
+}
+.actions *[b-vf6tu3tgvf] {
+    margin-left:0.5em;
+}
+/* _content/User_Dashboard/Views/UserDashboard/Index.cshtml.rz.scp.css */
+.title[b-5r79bu95u2] {
+    display: flex;
+    justify-content: space-between;
+}
+
+table[b-5r79bu95u2] {
+    margin-top: 2em;
+    width: 100%;
+}
+
+tr:nth-child(even)[b-5r79bu95u2] {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover[b-5r79bu95u2] {
+    background-color: #ddd;
+}
+
+table tbody tr td[b-5r79bu95u2] {
+    padding: 9px;
+    text-align: left;
+}
+
+table thead tr th[b-5r79bu95u2] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #cccccc;
+    color: black;
+    padding: 9px;
+}
+/* _content/User_Dashboard/Views/User/Edit.cshtml.rz.scp.css */
+/* Reset. */
+fieldset[b-oxf1haa8tm] {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    /* restore old fieldset. */
+    border: 2px groove threedface;
+}
+
+legend[b-oxf1haa8tm] {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    /* Disable bootstrap legend reboot. */
+    float: initial;
+    width: inherit;
+    padding: 0 10px;
+    margin: 0px;
+}
+
+.textarea[b-oxf1haa8tm] {
+    width: 100%;
+}
+
+.editform[b-oxf1haa8tm] {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2[b-oxf1haa8tm] {
+    font-weight: 500;
+}
+
+.block[b-oxf1haa8tm] {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+.Todashboard[b-oxf1haa8tm]{
+    display:flex;
+    justify-content: space-between;
+}
+.btn4blue[b-oxf1haa8tm] {
+    background-color: #2b78e4;
+    color:white;
+}
+/* _content/User_Dashboard/Views/User/EditAdmin.cshtml.rz.scp.css */
+/* Reset. */
+fieldset[b-fgrpfrivy6] {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    /* restore old fieldset. */
+    border: 2px groove threedface;
+}
+
+legend[b-fgrpfrivy6] {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    /* Disable bootstrap legend reboot. */
+    float: initial;
+    width: inherit;
+    padding: 0 10px;
+    margin: 0px;
+}
+
+.textarea[b-fgrpfrivy6] {
+    width: 100%;
+}
+
+button[b-fgrpfrivy6] {
+    background-color: #009E0F;
+    color: white;
+    margin-left: auto;
+}
+
+.editform[b-fgrpfrivy6] {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2[b-fgrpfrivy6] {
+    font-weight: 500;
+}
+
+.block[b-fgrpfrivy6] {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    margin-top: 0.5em;
+}
+/* _content/User_Dashboard/Views/User/New.cshtml.rz.scp.css */
+h2[b-hr4rlihyvo] {
+    font-weight: 500;
+}
+
+.block[b-hr4rlihyvo] {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    margin-top: 0.5em;
+}
+
+.userform form :last-child[b-hr4rlihyvo] {
+    margin-top: 1em;
+    margin-left: auto;
+    background-color: #009E0F;
+    color: white;
+}
+
+.userform :last-child[b-hr4rlihyvo] {
+    margin-top: 1em;
+}
+.userformhead[b-hr4rlihyvo]{
+    display:flex;
+    justify-content:space-between;
+}
+button[b-hr4rlihyvo] {
+    background-color: #2B78E5;
+    color: white;
+}
+/* _content/User_Dashboard/Views/User/Show.cshtml.rz.scp.css */
+.userData[b-f6ploexjbb] {
+    margin-top: 0.5em;
+}
+
+.btn2[b-f6ploexjbb] {
+    background-color: #009E0F;
+    color: white;
+    margin-left: auto;
+}
+
+.messages[b-f6ploexjbb] {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.message[b-f6ploexjbb] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    font-weight: 900;
+    font-size: 5em;
+}
+
+.comments[b-f6ploexjbb] {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+}
+
+.comment[b-f6ploexjbb] {
+    margin-top: 0.5em;
+}
+
+.deletebutton[b-f6ploexjbb]{
+    width: 5em;
+    height: 2em;
+    border-radius: 15%;
+}
+.bordermessage[b-f6ploexjbb]{
+    border: 1px solid black;
+    padding: 1em;
+}

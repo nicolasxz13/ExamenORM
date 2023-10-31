@@ -1,0 +1,49 @@
+.title[b-vf6tu3tgvf] {
+    display: flex;
+    justify-content: space-between;
+}
+
+table[b-vf6tu3tgvf] {
+    margin-top: 2em;
+    width: 100%;
+}
+
+tr:nth-child(even)[b-vf6tu3tgvf] {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover[b-vf6tu3tgvf] {
+    background-color: #ddd;
+}
+
+table tbody tr td[b-vf6tu3tgvf] {
+    padding: 9px;
+    text-align: left;
+}
+
+table thead tr th[b-vf6tu3tgvf] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #cccccc;
+    color: black;
+    padding: 9px;
+}
+
+button[b-vf6tu3tgvf] {
+    background-color: #2B78E5;
+    color: white;
+}
+.deletebutton[b-vf6tu3tgvf] {
+    background: none;
+    border: none;
+    color: #0d6efd;
+    text-decoration: underline;
+}
+.actions[b-vf6tu3tgvf]{
+    display:flex;
+    flex-direction:row;
+}
+.actions *[b-vf6tu3tgvf] {
+    margin-left:0.5em;
+}

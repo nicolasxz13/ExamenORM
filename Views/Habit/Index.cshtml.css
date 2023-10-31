@@ -1,0 +1,47 @@
+.update{
+    font-style:italic;
+    color: #9900ff;
+}
+.habits{
+    display: flex;
+    justify-content: space-between;
+}
+.otherhabits{
+    border: 1px solid black;
+}
+.likebutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_link{
+    display:flex;
+    justify-content:space-around;
+}
+.button_link button{
+    background:none;
+    border:none;
+    text-decoration:underline;
+    color:blue;
+}
+.habit {
+    margin-bottom: 3em;
+}
+.habititle {
+font-size:2em;
+}
+.otherhabits{
+    padding: 3em;
+    margin-bottom:3em;
+}
+.othertitle {
+    text-transform: capitalize;
+}
+.buttonpoint {
+    padding: 2em;
+    clip-path: polygon(26.18% 20.22%, 87.8% 16.3%, 85.77% 80.87%, 26.44% 83.04%, -5.74% 52.18%);
+}
+h2{
+    text-align:center;
+}

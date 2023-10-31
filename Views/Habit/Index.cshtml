@@ -1,0 +1,96 @@
+@model HabitsList_indexView
+@{
+    int? userid = Context.Session.GetInt32("UserId");
+}
+
+<div class="habits">
+    <div class="youhabit">
+        <h2>You habits</h2>
+        @foreach (Habit youhabit in @Model.YouHabit)
+        {
+            <div class="habit">
+                <p class="habititle">@youhabit.Title
+                    @if ((DateTime.Now - youhabit.UpdatedAt).TotalHours <= 24)
+                    {
+                        <span class="update">Updated!</span>
+                    }
+                </p>
+                <p>@{
+                        string result = "";
+                        int i = youhabit.Likes.Count();
+                        if (i == 0)
+                        {
+                            result = "No cheers yet!";
+                        }
+                        else if (i == 1)
+                        {
+                            result = "1 person is cheering you on!";
+                        }
+                        else
+                        {
+                            result = $"{youhabit.Likes.First().Creator.Name} and {i} others are cheering them on!";
+                        }
+                    }
+                    @result</p>
+                <p>@youhabit.Category.Name</p>
+                <div class="button_link">
+                    <form asp-action="Edit" asp-controller="Habit" asp-route-id="@youhabit.Id" method="get">
+                        <button>Edit</button>
+                    </form>
+
+                    <form asp-action="Delete" asp-controller="Habit" asp-route-id="@youhabit.Id">
+                        <button>Delete</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div>
+        <h2>Other Habits</h2>
+        @foreach (Habit otherhabit in @Model.OtherHabit)
+        {
+            <div class="otherhabits">
+                <p class="othertitle"><a asp-controller="User" asp-action="Show" asp-route-id="@otherhabit.CreatorId">@otherhabit.Creator.Name</a>
+                    is going to @otherhabit.Title
+                    @if ((DateTime.Now - otherhabit.UpdatedAt).TotalHours <= 24)
+                    {
+                        <span class="update">Updated!</span>
+                    }
+                </p>
+                <p>
+                    @{
+                        string result = "";
+                        int i = otherhabit.Likes.Count();
+                        if (i == 0)
+                        {
+                            result = "Give them their first cheer!";
+                        }
+                        else if (i == 1)
+                        {
+                            result = "1 person is cheering them on!";
+                        }
+                        else
+                        {
+                            result = $"{otherhabit.Likes.First().Creator.Name} and {i} others are cheering them on!";
+                        }
+                    }
+                    @result
+                </p>
+                <div class="likebutton">
+                    <p>@otherhabit.Category.Name</p>
+                    @if (otherhabit.Likes.Any(a => a.CreatorId == userid))
+                    {
+                        <p>Thanks for the cheer!</p>
+                    }
+                    else
+                    {
+                        <form asp-action="Create" asp-controller="Like" asp-route-habitid="@otherhabit.Id">
+                            <button type="submit" class="buttonpoint">Cheer On!</button>
+                        </form>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

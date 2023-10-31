@@ -1,0 +1,21 @@
+h2[b-kmabpilgpm] {
+    font-weight: 500;
+}
+
+.block[b-kmabpilgpm] {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    margin-top: 0.5em;
+}
+
+.userform form :last-child[b-kmabpilgpm] {
+    margin-top: 1em;
+    margin-left: auto;
+    background-color: #009E0F;
+    color: white;
+}
+
+.userform :last-child[b-kmabpilgpm] {
+    margin-top: 1em;
+}

@@ -1,0 +1,20 @@
+h2[b-6d4vrt0yf2] {
+    font-weight: 500;
+}
+
+.block[b-6d4vrt0yf2] {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+}
+
+.userform form :last-child[b-6d4vrt0yf2] {
+    margin-top: 1em;
+    margin-left: auto;
+    background-color: #009E0F;
+    color: white;
+}
+
+.userform :last-child[b-6d4vrt0yf2] {
+    margin-top: 1em;
+}

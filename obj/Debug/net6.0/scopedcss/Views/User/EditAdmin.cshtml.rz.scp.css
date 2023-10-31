@@ -1,0 +1,50 @@
+/* Reset. */
+fieldset[b-fgrpfrivy6] {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    /* restore old fieldset. */
+    border: 2px groove threedface;
+}
+
+legend[b-fgrpfrivy6] {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    /* Disable bootstrap legend reboot. */
+    float: initial;
+    width: inherit;
+    padding: 0 10px;
+    margin: 0px;
+}
+
+.textarea[b-fgrpfrivy6] {
+    width: 100%;
+}
+
+button[b-fgrpfrivy6] {
+    background-color: #009E0F;
+    color: white;
+    margin-left: auto;
+}
+
+.editform[b-fgrpfrivy6] {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2[b-fgrpfrivy6] {
+    font-weight: 500;
+}
+
+.block[b-fgrpfrivy6] {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    margin-top: 0.5em;
+}

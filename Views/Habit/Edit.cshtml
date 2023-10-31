@@ -1,0 +1,39 @@
+@model HabitCategoryView
+<h2>Edit Habit</h2>
+@{
+    int? id = Context.Session.GetInt32("UserId");
+}
+<form asp-action="Update" asp-controller="Habit" asp-route-id="@Model.Habit.Id">
+    <input type="hidden" value="@id" asp-for="@Model.Habit.CreatorId" />
+    <div class="blocks">
+        <label asp-for="@Model.Habit.Title">Habit Title</label>
+        <input asp-for="@Model.Habit.Title">
+    </div>
+    <div class="blocks">
+        <span asp-validation-for="@Model.Habit.Title"></span>
+    </div>
+    <div class="blocks">
+        <label asp-for="@Model.Habit.Description">Description</label>
+        <textarea asp-for="@Model.Habit.Description"></textarea>
+    </div>
+    <div class="blocks">
+        <span asp-validation-for="@Model.Habit.Description"></span>
+    </div>
+
+    <div class="blocks">
+        <label asp-for="@Model.Habit.CategoryId">Category</label>
+        <select asp-for="@Model.Habit.CategoryId">
+            @foreach (Category category in @Model.Categories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+    </div>
+    <div class="blocks">
+        <span asp-validation-for="@Model.Habit.CategoryId"></span>
+    </div>
+
+    <div class="blocks">
+        <button type="submit" class="btn1 btnmmargin">Update habit</button>
+    </div>
+</form>

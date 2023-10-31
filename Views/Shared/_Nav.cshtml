@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <div class="container-fluid">
+
+            @{
+                int? userid = Context.Session.GetInt32("UserId");
+            }
+            @if (userid == null)
+            {
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Home</a>
+            }
+            else
+            {
+                <a class="navbar-brand" asp-controller="Habit" asp-action="Index">Habit Helper</a>
+                <a class="navbar-brand" asp-controller="Habit" asp-action="New">Start a Habit</a>
+            }
+
+        </div>
+        @if (userid == null)
+        {
+            <a class="navbar-brand" asp-controller="Login" asp-action="Index">SingIn</a>
+        }
+        else
+        {
+            <a class="navbar-brand" asp-controller="Login" asp-action="Logout">Log Off</a>
+        }
+    </div>
+</nav>

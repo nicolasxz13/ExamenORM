@@ -1,0 +1,51 @@
+/* Reset. */
+fieldset[b-oxf1haa8tm] {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    /* restore old fieldset. */
+    border: 2px groove threedface;
+}
+
+legend[b-oxf1haa8tm] {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    /* Disable bootstrap legend reboot. */
+    float: initial;
+    width: inherit;
+    padding: 0 10px;
+    margin: 0px;
+}
+
+.textarea[b-oxf1haa8tm] {
+    width: 100%;
+}
+
+.editform[b-oxf1haa8tm] {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2[b-oxf1haa8tm] {
+    font-weight: 500;
+}
+
+.block[b-oxf1haa8tm] {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+.Todashboard[b-oxf1haa8tm]{
+    display:flex;
+    justify-content: space-between;
+}
+.btn4blue[b-oxf1haa8tm] {
+    background-color: #2b78e4;
+    color:white;
+}

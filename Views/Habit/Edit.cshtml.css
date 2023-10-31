@@ -1,0 +1,20 @@
+﻿h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25em;
+    margin-top: 0.5em;
+}
+
+    .blocks > * {
+        margin-top: 1.5em;
+    }
+
+.btnmmargin {
+    margin-left: auto;
+}
